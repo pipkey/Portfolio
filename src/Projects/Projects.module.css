@@ -1,0 +1,28 @@
+.projects{
+}
+.pBlock {
+
+    min-height: 100vh;
+    background-color: #ff5d38;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projBlock {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    flex-wrap: wrap;
+
+
+}
+
+.title {
+    background-color: #ff996d;
+    width: 100px;
+    height: 25px;
+    border: 1px solid;
+    text-align: center;
+}
+
