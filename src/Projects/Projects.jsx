@@ -4,6 +4,9 @@ import Project from "./project/Project";
 import styleContainer from "../common/styles/container.module.css"
 
 const Projects = () => {
+
+    let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque";
+
     return (
         <div className={style.projects}>
 
@@ -13,11 +16,11 @@ const Projects = () => {
 
                 <div className={`${styleContainer.container} ${style.projBlock}`}>
                     <Project value="todoList"
-                             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque"/>
+                             text={text}/>
                     <Project value="soushal"
-                             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque"/>
+                             text={text}/>
                     <Project value="portfolio"
-                             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque"/>
+                             text={text}/>
                 </div>
 
             </div>

@@ -1,0 +1,39 @@
+.mainCont {
+    margin: 0;
+    background-color: #78beff;
+    min-height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    background-color: #ff996d;
+    width: 100px;
+    height: 25px;
+    border: 1px solid;
+    text-align: center;
+
+}
+
+.inputAreas {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+   height: 200px;
+    background-color: #282c34;
+    border: 1px solid red;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 15px;
+}

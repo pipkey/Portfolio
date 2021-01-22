@@ -5,6 +5,7 @@ import Main from "./MainBlock/Main";
 import SkillBlock from "./Skills/SkillBlock";
 import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
+import Form from "./Form/Form";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Main/>
             <SkillBlock/>
             <Projects/>
+            <Form/>
             <Footer/>
         </div>
     );
