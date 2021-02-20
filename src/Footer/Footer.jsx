@@ -1,10 +1,11 @@
 import React from "react";
 import style from "./Footer.module.css"
+import Title from "../common/Components/Title";
 
 const Footer =()=> {
     return(
         <div className={style.footer}>
-            <h4 className={style.title}> Contacts </h4>
+            <Title title={'Let’s Talk!'}/>
             <div className={style.hrefs}>
                 <span>vk</span>
                 <hr/>

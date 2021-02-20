@@ -1,0 +1,28 @@
+@import "./../common/styles/sass/variables";
+.projects {
+  background-color: $bgColor;
+
+  .pBlock {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .projBlock {
+      align-items: flex-start;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+      /*border: 1px solid;*/
+      flex-wrap: wrap;
+      margin-top: 25px;
+      @media screen and (max-width: 749px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+

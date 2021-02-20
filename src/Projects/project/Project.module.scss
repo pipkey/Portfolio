@@ -1,0 +1,81 @@
+@import "./../../common/styles/sass/variables";
+@import "./../../common/styles/sass/mixins";
+
+.proj {
+  /*border: 1px solid white;*/
+  font-family: 'IBM Plex Mono', monospace;
+  width: 335px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $mainColor;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 10px;
+
+  .imges {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $textTitleColor;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .5;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .btn {
+      position: relative;
+      z-index: 0;
+      width: 120px;
+      height: 40px;
+      background-color: $mainColor;
+      border-radius: 5px;
+      border-color: $mainColor;
+
+
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 15px;
+      color: $textAnatacColor;
+    }
+  }
+
+  .value {
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .text {
+    @include text('Open Sans', sans-serif, 10px, $textAnatacColor);
+    //font-family: ;
+    //font-size: 10px;
+    //color: $textAnatacColor;
+
+    font-weight: bold;
+
+  }
+}
+
+
+
+
+
+

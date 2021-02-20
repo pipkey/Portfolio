@@ -1,26 +1,49 @@
 import React from "react";
-import style from "./Projects.module.css"
+import style from "./Projects.module.scss"
 import Project from "./project/Project";
 import styleContainer from "../common/styles/container.module.css"
+import Title from "../common/Components/Title";
+import todoListimg from "./../assets/img/todos.jpg"
+import portfolioimg from "./../assets/img/portfolio.png"
+import socImg from "./../assets/img/social-network.jpg"
 
 const Projects = () => {
 
-    let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque";
+    let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaqueLorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque";
+    let text2 = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
+
+
+    let todoList = {
+        backgroundImage: `url( ${todoListimg} )`,
+    };
+    let samWay = {
+        backgroundImage: `url( ${socImg} )`,
+    };
+    let portfolio = {
+        backgroundImage: `url( ${portfolioimg} )`,
+    };
+
 
     return (
         <div className={style.projects}>
 
             <div className={style.pBlock}>
 
-                <h3 className={style.title}>Projects</h3>
+                <Title title={"Introduce My Projects"}/>
 
                 <div className={`${styleContainer.container} ${style.projBlock}`}>
-                    <Project value="todoList"
-                             text={text}/>
-                    <Project value="soushal"
-                             text={text}/>
-                    <Project value="portfolio"
-                             text={text}/>
+                    <Project
+                        style={todoList}
+                        value="TODOLIST"
+                        text={text}/>
+                    <Project
+                        style={samWay}
+                        value="SOCIAL"
+                        text={text2}/>
+                    <Project
+                        style={portfolio}
+                        value="PORTFOLIO"
+                        text={text}/>
                 </div>
 
             </div>

@@ -1,11 +1,13 @@
 .footer {
-    border: 2px solid;
+    /*border: 2px solid;*/
     height: 150px;
-  background-color: #fffdd5;
+  background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .hrefs {
@@ -13,10 +15,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #a8b3ff;
-}
-.title{
-    background-color: #ff996d;
+   background-color: #202020;
 }
 
 .hrefs span {

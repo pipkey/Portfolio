@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./Form.module.css"
 import container from "../common/styles/container.module.css"
+import Title from "../common/Components/Title";
 
 
 const Form = () => {
@@ -8,7 +9,7 @@ const Form = () => {
     return (
         <div className="bigDiv">
             <div className={style.mainCont} >
-                    <h3 className={style.title}>Form</h3>
+                    <Title title={"You can write me"}/>
 
                 <div className={` ${style.inputAreas} ${container}`}>
                     <input type="text"/>
