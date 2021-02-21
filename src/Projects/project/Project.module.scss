@@ -24,9 +24,8 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
+
 
     &::before {
       position: absolute;
@@ -49,11 +48,7 @@
       background-color: $mainColor;
       border-radius: 5px;
       border-color: $mainColor;
-
-
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 15px;
-      color: $textAnatacColor;
+      @include text($titleFont,15px,$textAnatacColor);
     }
   }
 
@@ -64,10 +59,8 @@
   }
 
   .text {
-    @include text('Open Sans', sans-serif, 10px, $textAnatacColor);
-    //font-family: ;
-    //font-size: 10px;
-    //color: $textAnatacColor;
+    @include text($textFont, 10px, $textAnatacColor);
+
 
     font-weight: bold;
 

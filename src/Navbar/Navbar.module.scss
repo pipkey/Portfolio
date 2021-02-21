@@ -1,0 +1,14 @@
+@import "./../common/styles/sass/mixins";
+@import "./../common/styles/sass/variables";
+
+
+//Узнать почему не унаследовался из миксина цвет текста!!!
+.navbar {
+  width: 400px;
+  @include text($titleFont,17px,$textTitleColor);
+  @include flex(flex, space-between, center);
+  & a {
+    color:$textTitleColor ;
+    text-decoration: none;
+  }
+}

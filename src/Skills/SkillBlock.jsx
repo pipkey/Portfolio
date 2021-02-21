@@ -1,6 +1,6 @@
 import React from "react";
 import Skill from "./Skill/Skill";
-import style from "./SkillBlock.module.css"
+import style from "./SkillBlock.module.scss"
 import styleContainer from "../common/styles/container.module.css"
 import Title from "../common/Components/Title";
 

@@ -1,4 +1,6 @@
 @import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
+
 .projects {
   background-color: $bgColor;
 
@@ -9,12 +11,8 @@
     flex-direction: column;
 
     .projBlock {
-      align-items: flex-start;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 17px;
-      display: flex;
-      justify-content: space-between;
-      /*border: 1px solid;*/
+      @include flex(flex,space-between,flex-start);
+      @include text($textFont,17px,$textTitleColor);
       flex-wrap: wrap;
       margin-top: 25px;
       @media screen and (max-width: 749px) {

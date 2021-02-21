@@ -1,0 +1,30 @@
+@import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
+
+
+.main {
+  min-height: 100vh;
+  background-color: #e6e8e4;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: $bgColor;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
+  }
+
+  .text {
+    width: 300px;
+    background-color: #c6ffd2;
+
+  }
+}
+
+
+

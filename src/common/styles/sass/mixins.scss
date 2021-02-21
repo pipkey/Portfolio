@@ -5,3 +5,9 @@
   font-size: $fontSize;
   color: $color;
 }
+
+@mixin flex($display, $justifyContent, $align-items){
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $align-items;
+}
