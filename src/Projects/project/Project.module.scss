@@ -3,7 +3,9 @@
 
 .proj {
   /*border: 1px solid white;*/
+  box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   font-family: 'IBM Plex Mono', monospace;
+
   width: 335px;
   min-height: 150px;
   display: flex;
@@ -60,10 +62,7 @@
 
   .text {
     @include text($textFont, 10px, $textAnatacColor);
-
-
     font-weight: bold;
-
   }
 }
 

@@ -22,7 +22,17 @@
   .text {
     width: 300px;
     background-color: #c6ffd2;
-
+    .prevName{
+      position: relative;
+      display: inline-block;
+      .letter{
+        position: relative;
+        display: inline-block;transform-origin: 50% 50%;
+        transform: translate(0px, 0px);
+        opacity: 1;
+        color: rgb(33, 33, 33);
+      }
+    }
   }
 }
 
