@@ -1,0 +1,83 @@
+@import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
+
+
+.mainCont {
+  box-shadow: inset 3px 3px 4px 3px $textAnatacColor;
+  margin: 0;
+  background-color: $mainColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+
+  .title {
+    z-index: 0;
+    background-color: #ff996d;
+    width: 100px;
+    height: 25px;
+    border: 1px solid;
+    text-align: center;
+  }
+
+  .inputAreas {
+    z-index: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: $bgColor;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    box-shadow: inset 3px 3px 4px 3px $textAnatacColor;
+    @media screen and (max-width: 420px) {
+      min-width: 300px;
+    }
+
+    .inp {
+      margin: 15px;
+      padding: 5px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+    .btn {
+      margin: 25px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      @include text($titleFont, 15px, $textTitleColor);
+      background-color: $mainColor;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      transition: 70ms linear;
+
+
+      &:hover{
+        box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5)
+      }
+    }
+  }
+
+  .free{
+    z-index: 0;
+    margin: 100px;
+    @include text($titleFont,30px,$textTitleColor);
+  }
+
+}
+
+
+
+
+
+

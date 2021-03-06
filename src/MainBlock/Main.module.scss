@@ -8,32 +8,25 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  background-repeat: no-repeat;
+
+
   &::before{
     content: "";
     position: absolute;
-    background-color: $bgColor;
+    background-color: $textTitleColor;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: .2;
+    opacity: .9;
   }
 
   .text {
-    width: 300px;
-    background-color: #c6ffd2;
-    .prevName{
-      position: relative;
-      display: inline-block;
-      .letter{
-        position: relative;
-        display: inline-block;transform-origin: 50% 50%;
-        transform: translate(0px, 0px);
-        opacity: 1;
-        color: rgb(33, 33, 33);
-      }
+    margin-top: 15%;
+    @include text($titleFont,50px,$mainColor);
+    z-index: 0;
     }
-  }
 }
 
 
