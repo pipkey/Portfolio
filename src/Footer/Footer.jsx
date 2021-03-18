@@ -5,7 +5,7 @@ import vk from "../common/pict/vkontacte.png"
 import inst from "../common/pict/instagram.png"
 import telega from "../common/pict/telegram.png"
 import twit from "../common/pict/twittew.png"
-
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
 
@@ -14,28 +14,25 @@ const Footer = () => {
     };
     let instIcon = {
         backgroundImage: `url( ${inst} )`,
-    };let tgIcon = {
+    };
+    let tgIcon = {
         backgroundImage: `url( ${telega} )`,
-    };let twitIcon = {
+    };
+    let twitIcon = {
         backgroundImage: `url( ${twit} )`,
     };
 
     return (
         <div className={style.footer}>
             <Title title={'Let’s Talk!'}/>
-            <div className={style.hrefs}>
-                <button style={vkIcon}> </button>
-                <button style={instIcon}> </button>
-                <button style={tgIcon}> </button>
-                <button style={twitIcon}> </button>
-                {/*<span>vk</span>*/}
-                {/*<hr/>*/}
-                {/*<span>Inst</span>*/}
-                {/*<hr/>*/}
-                {/*<span>TG</span>*/}
-                {/*<hr/>*/}
-                {/*<span>twitter</span>*/}
-            </div>
+            <Fade right>
+                <footer className={style.hrefs}>
+                    <button style={vkIcon}> </button>
+                    <button style={instIcon}> </button>
+                    <button style={tgIcon}> </button>
+                    <button style={twitIcon}> </button>
+                </footer>
+            </Fade>
         </div>
     )
 };

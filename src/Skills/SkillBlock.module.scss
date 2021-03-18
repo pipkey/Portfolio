@@ -5,9 +5,18 @@
     box-shadow: inset 3px 3px 4px 3px $textAnatacColor;
     min-height: 100vh;
     background-color: $mainColor;
+    .particles{
+        position: absolute;
+      //top: 0;
+      //right: 0;
+      //left: 0;
+      //bottom: 0;
+        opacity: .5;
+    }
     .skillsContainer{
         flex-direction: column;
         justify-content: flex-start;
+
         .skills{
             margin-top: 25px;
             width: 100%;

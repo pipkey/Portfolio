@@ -6,6 +6,8 @@ import Title from "../common/Components/Title";
 import todoListimg from "./../assets/img/todos.jpg"
 import portfolioimg from "./../assets/img/portfolio.png"
 import socImg from "./../assets/img/social-network.jpg"
+import Fade from 'react-reveal/Fade';
+
 
 const Projects = () => {
 
@@ -30,22 +32,22 @@ const Projects = () => {
             <div className={style.pBlock}>
 
                 <Title title={"Introduce My Projects"}/>
-
-                <div className={`${styleContainer.container} ${style.projBlock}`}>
-                    <Project
-                        style={todoList}
-                        value="TODOLIST"
-                        text={text}/>
-                    <Project
-                        style={samWay}
-                        value="SOCIAL"
-                        text={text2}/>
-                    <Project
-                        style={portfolio}
-                        value="PORTFOLIO"
-                        text={text}/>
-                </div>
-
+                <Fade right>
+                    <div className={`${styleContainer.container} ${style.projBlock}`}>
+                        <Project
+                            style={todoList}
+                            value="TODOLIST"
+                            text={text}/>
+                        <Project
+                            style={samWay}
+                            value="SOCIAL"
+                            text={text2}/>
+                        <Project
+                            style={portfolio}
+                            value="PORTFOLIO"
+                            text={text}/>
+                    </div>
+                </Fade>
             </div>
 
         </div>

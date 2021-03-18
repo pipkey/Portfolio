@@ -4,6 +4,7 @@
 
 //Узнать почему не унаследовался из миксина цвет текста!!!
 .navbar {
+  margin: 0 15px  ;
   width: 400px;
   @include text($titleFont,17px,$textTitleColor);
   @include flex(flex, space-between, center);
