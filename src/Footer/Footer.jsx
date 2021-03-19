@@ -23,7 +23,7 @@ const Footer = () => {
     };
 
     return (
-        <div className={style.footer}>
+        <div id={"contacts"} className={style.footer}>
             <Title title={'Let’s Talk!'}/>
             <Fade right>
                 <footer className={style.hrefs}>

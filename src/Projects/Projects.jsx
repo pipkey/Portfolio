@@ -27,7 +27,7 @@ const Projects = () => {
 
 
     return (
-        <div className={style.projects}>
+        <div id="projects" className={style.projects}>
 
             <div className={style.pBlock}>
 

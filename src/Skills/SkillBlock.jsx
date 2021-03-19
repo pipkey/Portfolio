@@ -47,7 +47,7 @@ const SkillBlock = () => {
     };
 
     return (
-        <div className={style.skillsBlock}>
+        <div id={"skill"} className={style.skillsBlock}>
             <Particles className={style.particles} params={particlesOptions}/>
 
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>

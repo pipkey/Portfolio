@@ -4,12 +4,22 @@
 
 //Узнать почему не унаследовался из миксина цвет текста!!!
 .navbar {
-  margin: 0 15px  ;
+  margin: 0 15px;
   width: 400px;
-  @include text($titleFont,17px,$textTitleColor);
+  @include text($titleFont, 17px, $textTitleColor);
   @include flex(flex, space-between, center);
-  & a {
-    color:$textTitleColor ;
+
+  a {
+    color: $textTitleColor;
     text-decoration: none;
+
+    &:hover {
+      color: $mainColor;
+    }
   }
+  .active{
+    color: $mainColor;
+  }
+
+
 }

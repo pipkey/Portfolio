@@ -3,6 +3,7 @@ import style from "./Form.module.scss"
 import Title from "../common/Components/Title";
 import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
 
 const particlesOptions = {
     particles: {
@@ -36,7 +37,11 @@ const Form = () => {
                     </form>
                 </Fade>
 
-                <div className={style.free}>I'm available for Freelance</div>
+                <div className={style.free}>
+
+                    <ReactTypingEffect text="I'm available for Freelance"/>
+
+                </div>
             </div>
         </div>
     )
