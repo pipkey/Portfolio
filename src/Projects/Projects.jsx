@@ -11,8 +11,10 @@ import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
 
-    let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaqueLorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt consequuntur amet itaque";
-    let text2 = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
+    let soc = "react redux,  class component, " + "redux-form, axios, " +
+    "typeScript, module CSS, HOCm react-router-dom";
+    let port = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
+    let todo = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
 
 
     let todoList = {
@@ -37,15 +39,15 @@ const Projects = () => {
                         <Project
                             style={todoList}
                             value="TODOLIST"
-                            text={text}/>
+                            text={todo}/>
                         <Project
                             style={samWay}
                             value="SOCIAL"
-                            text={text2}/>
+                            text={soc}/>
                         <Project
                             style={portfolio}
                             value="PORTFOLIO"
-                            text={text}/>
+                            text={port}/>
                     </div>
                 </Fade>
             </div>

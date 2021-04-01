@@ -3,14 +3,10 @@ import style from "./Skill.module.scss"
 
 const Skill = (props) => {
     return (
-        <div className={style.skill}>
-           <div className={style.icon} style={props.style} >
 
-            </div>
+        <div className={style.skill}>
+           <div className={style.icon} style={props.style} > </div>
             <h3>{props.value}</h3>
-            <span className={style.discription}>
-                {props.discription}
-            </span>
         </div>
     )
 };
