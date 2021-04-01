@@ -48,20 +48,12 @@
 
 
   .img {
+
     z-index: 2;
-    max-width: 720px;
-    max-height: 1080px;
+    min-width: 380px;
+    min-height: 570px;
     margin: 5%;
-    &::after {
-      content: "";
-      position: absolute;
-      right: 15%;
-      width: 30px;
-      height: 570px;
-      background-color: $mainColor;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
+
 
 
     .photo {
