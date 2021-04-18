@@ -2,13 +2,17 @@
 @import "./../../common/styles/sass/mixins";
 
 .content {
-  margin: 15px;
+  margin: 15px 0;
   box-shadow: 25px 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   font-family: "IBM Plex Mono", monospace;
   width: 300px;
   height: 212px;
   display: inline-block;
   position: relative;
+  @media screen and (max-width:420px) {
+    width: 270px;
+    height: 170px;
+  }
   & img {
     width: 100%;
     height: 100%;
@@ -25,6 +29,9 @@
     @include text($textFont, 15px, white);
     opacity: 0;
     transition: all 0.6s;
+    @media screen and (max-width:420px) {
+      @include text($textFont, 10px, white);
+    }
     
     .btnBlock {
       display: flex;
