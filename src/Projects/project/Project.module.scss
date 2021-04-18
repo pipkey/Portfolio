@@ -1,87 +1,50 @@
 @import "./../../common/styles/sass/variables";
 @import "./../../common/styles/sass/mixins";
 
-.proj {
-  /*border: 1px solid white;*/
-  box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  font-family: 'IBM Plex Mono', monospace;
-
-  width: 335px;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: $mainColor;
-  padding: 15px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  margin: 10px;
-
-  .imges {
+.content {
+  margin: 15px;
+  box-shadow: 25px 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  font-family: "IBM Plex Mono", monospace;
+  width: 300px;
+  height: 212px;
+  display: inline-block;
+  position: relative;
+  & img {
     width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    position: relative;
-    @include text($titleFont,10px,$mainColor);
-    @include flex(flex, center, center);
-
-    &:hover::before {
-      position: absolute;
-      content: " ";
-      background-color: $textTitleColor;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: .5;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+    height: 100%;
+  }
+  .about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    text-align: center;
+    @include text($textFont, 15px, white);
+    opacity: 0;
+    transition: all 0.6s;
+    
+    .btnBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    .btn {
-      position: relative;
-      z-index: 1;
-      background-color: $mainColor;
-      border-radius: 5px;
-      @include text($titleFont, 15px, $textTitleColor);
-      margin: 25px;
-      width: 100px;
-      height: 50px;
-      text-align: center;
-      border: none;
-      outline: none;
-      transition: 70ms linear;
-      &:hover {
-        box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5)
-      }
-    }
-    .btnFalse {
-      opacity: 0;
-    }
-
+  }
+  &:hover .about {
+    opacity: 1;
+  }
+  & h3{
+    @include text($titleFont, 20px, $mainColor );
+    margin: 5px 0 5px 0 ;
+  }
+  & h4{
+    @include text($titleFont, 15px, $textAnatacColor );
+    margin: 0;
+  }
+  & p{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
-
-
-
-  }
-  .value {
-    font-size: 17px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-
-  .text {
-    @include text($textFont, 10px, $textAnatacColor);
-    font-weight: bold;
-  }
-
-
-
-
-
-
-

@@ -7,6 +7,7 @@ import telega from "../common/pict/telegram.png"
 import twit from "../common/pict/twittew.png"
 import Fade from 'react-reveal/Fade';
 
+
 const Footer = () => {
 
     let vkIcon = {

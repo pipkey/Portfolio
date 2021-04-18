@@ -1,26 +1,21 @@
 import React from "react";
+import Button from "../../common/Components/Button";
 import style from "./Project.module.scss"
+
 
 const Project = (props) => {
 
     return (
-        <div className={style.proj}>
-
-            <div style={props.style} className={style.imges}>
-
-                <button className={style.btn}> Watch</button>
-
-            </div>
-
-            <div className={style.value}>
-                <span>
-                    {props.value}
-                </span>
-            </div>
-
-            <span className={style.text}>
-                        {props.text}
-                </span>
+        <div className={style.content}>
+            <span className={style.about}>
+                <h3>{props.nameBlock}</h3>               
+                {props.about}
+                <div className={style.btnBlock}>
+                    <Button title="Watch" />
+                    <Button title="Code" />
+                </div>
+            </span>
+            <img src={props.picture} alt='alt' />
         </div>
     )
 };

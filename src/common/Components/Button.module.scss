@@ -1,0 +1,16 @@
+@import "../styles/sass/variables.scss";
+@import "../styles/sass/mixins.scss";
+
+.btn  {
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    @include text($titleFont, 15px, $mainColor);
+    border: none;
+    outline: none;
+    transition: 70ms linear;
+    &:hover {
+        box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+}

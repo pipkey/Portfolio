@@ -16,16 +16,16 @@ const Main = () => {
             <div className={style.myName}>
                 <div className={style.specText}>
                     <ReactTypingEffect text={["Hi there", "Nice to meet you"]} typingDelay={1000} cursor="!"
-                                       speed={400}/>
+                        speed={400} />
                 </div>
                 <div className={style.text}>
                     I'm Philip Kamenkov -
-                    <br/>
+                    <br />
                     Frontend Developer
                 </div>
             </div>
             <div className={style.img}>
-                <img className={style.photo} src={myPhoto} alt='my Photo'/>
+                <img className={style.photo} src={myPhoto} alt="picture" />
             </div>
         </div>
     )

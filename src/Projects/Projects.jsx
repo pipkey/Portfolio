@@ -11,43 +11,45 @@ import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
 
-    let soc = "react redux,  class component, " + "redux-form, axios, " +
-    "typeScript, module CSS, HOCm react-router-dom";
-    let port = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
-    let todo = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, molestias minima voluptates voluptas ad quae sunt itaque";
-
-
-    let todoList = {
-        backgroundImage: `url( ${todoListimg} )`,
-    };
-    let samWay = {
-        backgroundImage: `url( ${socImg} )`,
-    };
-    let portfolio = {
-        backgroundImage: `url( ${portfolioimg} )`,
-    };
-
+    let Social =
+        <p>
+            <h4>What was used:</h4>
+            React, TypeScript, redux, redux-thunk, module CSS, redux-form, HOC, axios, connect, classes
+        </p>
+    let port =
+        <p>
+            <h4>What was used:</h4>
+                React, JavaScript, module CSS, <br />
+                SCSS, form
+        </p>
+    let todo = 
+    <p> 
+        <h4>What was used:</h4>
+    React, TypeScript, redux, redux-thunk, module CSS, redux-form, React.memo, hooks, axios, Material-UI
+</p>
 
     return (
         <div id="projects" className={style.projects}>
 
             <div className={style.pBlock}>
-
-                <Title title={"Introduce My Projects"}/>
+                <Title title={"Introduce My Projects"} />
                 <Fade right>
                     <div className={`${styleContainer.container} ${style.projBlock}`}>
                         <Project
-                            style={todoList}
-                            value="TODOLIST"
-                            text={todo}/>
+                            nameBlock={"TODOLIST"}
+                            picture={todoListimg}
+                            about={todo}
+                        />
                         <Project
-                            style={samWay}
-                            value="SOCIAL"
-                            text={soc}/>
+                            nameBlock={"PORTFOLIO"}
+                            picture={portfolioimg}
+                            about={port}
+                        />
                         <Project
-                            style={portfolio}
-                            value="PORTFOLIO"
-                            text={port}/>
+                            nameBlock={"SOCIAL"}
+                            picture={socImg}
+                            about={Social}
+                        />
                     </div>
                 </Fade>
             </div>
@@ -57,3 +59,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
