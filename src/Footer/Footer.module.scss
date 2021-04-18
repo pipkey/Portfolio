@@ -11,29 +11,20 @@
 }
 
 .hrefs {
+  border: olive 1px solid;
+  margin: 50px;
   width: 80%;
   @include flex(flex, space-around, center);
 
-  & button {
-    border-radius: 7px;
-    border: none;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
+  & a {
+    text-decoration: none;
+  }
+  a img{
     width: 50px;
     height: 50px;
+    border-radius: 5%;
   }
 
-  //& hr {
-  //  width: 1px;
-  //  height: 15px;
-  //  background-color: #c25f42;
-  //}
-
-  //& span {
-  //  border-radius: 5px;
-  //}
 }
 
 
