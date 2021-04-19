@@ -16,11 +16,7 @@ const Footer = () => {
             <Title title={'Let’s Talk!'}/>
             <Fade right>
                 <footer className={style.hrefs}>
-                    {/* <button style={FaceIcon}> <a href="https://www.facebook.com/pil.kav.5"></a> </button>
-                    <button style={instIcon}> </button>
-                    <button style={tgIcon}> </button>
-                    <button style={linkedicon}> </button> */}
-
+                    
                     <a href="https://www.facebook.com/pil.kav.5" target="blank">
                         <img src={FB} alt="facebook"/>
                     </a>
